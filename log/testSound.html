@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/lib/lowLag.js"></script>
+	<script type="text/javascript" src="js/lib/underscore-min.js"></script>
+	<style type="text/css">
+	body{
+		background-color: #112;
+	}
+	</style>
+	<script type="text/javascript" src="js/lib/jquery.jsmovie.js"></script>
+	<script type="text/javascript">	
+		// READY FUNCTION
+		$(document).ready(function() {
+    
+			lowLag.init();
+	    lowLag.load('KAKKIAINEN_ALL/1_0_FIN_VideoVO_Giggles_Free_Intro.mp3','intro');
+	    
+			lowLag.load('KAKKIAINEN_ALL/kakkis_L1_NEG_1.mp3','s1');
+	    lowLag.load('KAKKIAINEN_ALL/2_0_FIN_VideoVO_Giggles_Free_Win.ogg','s2');
+	    lowLag.load('KAKKIAINEN_ALL/2_0_FIN_VideoVO_Giggles_Free_Win.mp3','s3');
+	    lowLag.load('KAKKIAINEN_ALL/2_0_FIN_VideoVO_Giggles_Free_Win.wav','s4');
+	    lowLag.load('soundsamples/sample.mp3','s5');
+
+	    $('#s1').click(function(){
+	    	lowLag.play('s1');
+	    });
+	    $('#s2').click(function(){
+	    	lowLag.play('s2');
+	    });
+	    $('#s3').click(function(){
+	    	lowLag.play('s3');
+	    });
+	    $('#s4').click(function(){
+	    	lowLag.play('s4');
+	    });
+	    $('#s5').click(function(){
+	    	lowLag.play('s5');
+	    });
+		});
+	</script>
+</head>
+<body>
+<button id="s1">Mp3</button>
+<button id="s2">OGG</button>
+<button id="s3">mp3</button>
+<button id="s4">wav</button>
+<button id="s5">Other mp3</button>
+<img src="img/GB_levelup/GB_levelup_08.png" />
+</body>
+</html>

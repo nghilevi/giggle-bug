@@ -1,0 +1,11 @@
+1) create html5 page, where you can overlay several png images on top of each other. take like the first frame of each folder/part (e.g. head, body, smile, etc) and overlay them, so you get the character to view
+
+2) next, create a function, that can say, which number of picture on each component we'll use. e.g. i can call the function with 1, 1, 4, 5, 1, 3, 5, 7 --> this will take the 1st image from GB_L1_antenna_L, 1st image from GB_L1_antenna_R, 4th image from GB_L1_arm_L, and so on. now we can manually change the values of the animation then
+			
+
+3) allow to create arrays of these values, which are pushed to animator function, which calls the function in 2 to animate the thing.
+	so something like:
+	animation={[1, 1, 4, 5, 1, 3, 5, 7], [2, 2, 4, 5, 1, 3, 5, 1], [1, 1, 4, 5, 1, 3, 5, 7]}
+	animate(animation)
+
+	and that would play those frames

@@ -1,0 +1,8 @@
+Giggle Bug BUGS list
+22/5/2014
+
+1. When multi-click fast, next face motion may collide, current sound is stopped (Solution? make the div unclickable while the current animation run, not sure if doable)
+
+2. sound is delay
+3. Video cannot autoplay in iOs ()
+4. Level 1 face motion is still missing POS-b, POS-c, NEG-b (research for better solution to put in)

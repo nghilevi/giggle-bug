@@ -1,0 +1,3 @@
+* Ghép các frames lại thành 1 con bug
+* Touch 1 bộ phận, hình sẽ chạy từ 0 - end (folder image) hình cuối sẽ trở về 0:
+* Multiple touch, asynchronous events.

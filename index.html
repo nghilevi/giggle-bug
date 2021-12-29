@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giggle Bug</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<!-- disable zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script>
+
+		 if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+		 	window.location.href = "index2.html"
+		 }
+	</script>
+
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/lib/underscore-min.js"></script>
+	<script type="text/javascript" src="js/lib/soundjs.js"></script>
+	<script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
+	<!-- // <script type="text/javascript" src="js/lib/lowLag.js"></script> -->
+	<script type="text/javascript" src="js/preLoadImg.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.jsmovie.js"></script>
+	 <!-- <script src="http://code.createjs.com/soundjs-0.5.2.min.js"></script>
+	 <script src="http://code.createjs.com/preloadjs-0.4.1.min.js"></script>
+	 <script type="text/javascript" src="js/lib/webaudiox.js"></script> -->
+	
+	<script type="text/javascript" src="js/mainscript.js"></script>
+	<script type="text/javascript" src="js/motions.js"></script>
+</head>
+<body>
+<img hidden id="introImg2" src="img/intro.gif"> </img>
+<img hidden id="outtroImg2" src="img/outtro.gif"> </img>
+<div id="container">
+	<!-- Outro video -->
+	<div hidden id="end-game" >
+		<img src="img/BACKGROUNDS/Ground.png">
+	</div>
+	<!-- <div hidden id="outro-frames"></div> -->
+
+	<!-- Shield for delay purpose, and assemble the [A]vengers -->
+	<!-- <div hidden id="shield"></div> -->
+
+	<!-- LEVEL 2 -->
+	<div hidden id="left-antenna-L2" class="l2"></div>
+	<div hidden id="right-antenna-L2" class="l2"></div>
+	<div hidden id="body-L2" class="l2"></div>
+	<div hidden id="right-hand-L2" class="l2"></div>
+	<div hidden id="left-hand-L2" class="l2"></div>
+	<div hidden id="right-leg-L2" class="l2"></div>
+	<div hidden id="left-leg-L2" class="l2"></div>
+	<div hidden id="head-L2" class="l2"></div>
+	<div hidden id="face-idle-L2" class="l2"></div>
+	<div hidden id="collar-L2" class="l2"></div>
+
+	<div hidden class="face-motion-level-2">
+		<div hidden id="POS-a-L2"></div>
+		<div hidden id="POS-b-L2"></div> 
+		<div hidden id="POS-c-L2"></div>
+		<div hidden id="POS-d-L2"></div>
+		<div hidden id="POS-e-L2"></div> 
+		<div hidden id="POS-f-L2"></div>
+	</div>
+
+	<div hidden id="level2up" class="bb"></div>
+	<!--  -->
+	<!-- <div hidden id="levelUp">
+		<img src="img/BACKGROUNDS/Ground.png">
+	</div> -->
+	<!-- LEVEL 1 -->
+	<div hidden id="right-leg-L1" class="l1"></div>
+	<div hidden id="right-antenna-L1" class="l1"></div>
+	<div hidden id="left-antenna-L1" class="l1"></div>
+	<div hidden id="collar-L1" class="l1"></div>
+	<div hidden id="left-leg-L1" class="l1"></div>
+	<div hidden id="body-L1" class="l1"></div>
+	<div hidden id="left-arm-L1" class="l1"></div>
+	<div hidden id="right-hand-L1" class="l1"></div>
+	<div hidden id="prevent-motion-right-hand-L1" class="l1"></div>
+	<div hidden id="prevent-motion-left-arm-L1" class="l1"></div>
+	<div hidden id="head-L1" class="l1"></div>
+	<div hidden id="face-idle-L1" class="l1 active"></div>
+	<div hidden class="face-motion-level-1 active">
+		<div hidden id="NEG-a-L1"></div>
+		<div hidden id="NEG-b-L1"></div> 
+		<div hidden id="POS-a-L1"></div>
+		<div hidden id="POS-b-L1"></div> 
+		<div hidden id="POS-c-L1"></div>
+	</div>
+	
+	<!-- Intro video -->
+	<!-- <div hidden id="intro-frames"></div> -->
+	<!-- Start Game -->
+	<div hidden id="start-game" >
+		<img src="img/pressStart.jpg">
+	</div>
+
+	<!-- LOADING SCREEN -->
+	<div id="loading-animation">
+		<div class="cube1"></div>
+		<div class="cube2"></div>
+	</div>	
+</div>
+<!-- <div id="video-click"></div> -->
+</body>
+</html>
